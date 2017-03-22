@@ -1,4 +1,4 @@
-package com.eviltester.webdriver;
+package com.javafortesters.webdriver;
 
 import org.junit.Assert;
 import org.junit.Test;
