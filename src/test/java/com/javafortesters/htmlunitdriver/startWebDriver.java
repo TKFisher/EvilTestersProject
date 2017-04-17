@@ -6,11 +6,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 
 public class startWebDriver {
 
+    WebDriver ffDriver = new FirefoxDriver();
 
     @Test
     public void headlessDriver (){
@@ -27,14 +29,12 @@ public class startWebDriver {
     @Test
     public void browserDriverTest(){
 
-        WebDriver driver = new FirefoxDriver();
-        driver.get("http://www.compendiumdev.co.uk/selenium/");
+        ffDriver.get("http://www.compendiumdev.co.uk/selenium/");
 
-        assertTrue("This title contains expected text.", driver.getTitle().contains("Automated Web Testing with Java"));
+        assertTrue("This title contains expected text.", ffDriver.getTitle().contains("Automated Web Testing with Java"));
 
-        driver.close();
-        driver.quit();
-
+        ffDriver.close();
+        ffDriver.quit();
     }
 
 }
