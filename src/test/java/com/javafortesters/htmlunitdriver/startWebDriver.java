@@ -12,12 +12,12 @@ import static org.junit.Assert.assertTrue;
 
 public class startWebDriver {
 
-    WebDriver ffDriver = new FirefoxDriver();
+    WebDriver driver ;
 
     @Test
     public void headlessDriver (){
 
-         WebDriver driver = new HtmlUnitDriver();
+         driver = new HtmlUnitDriver();
          driver.navigate().to("http://www.compendiumdev.co.uk/selenium/");
 
          assertTrue("The title starts as expected.", driver.getTitle().startsWith("Selenium Simplified"));
@@ -29,12 +29,13 @@ public class startWebDriver {
     @Test
     public void browserDriverTest(){
 
-        ffDriver.get("http://www.compendiumdev.co.uk/selenium/");
+        driver = new FirefoxDriver();
+        driver.get("http://www.compendiumdev.co.uk/selenium/");
 
-        assertTrue("This title contains expected text.", ffDriver.getTitle().contains("Automated Web Testing with Java"));
+        assertTrue("This title contains expected text.", driver.getTitle().contains("Automated Web Testing with Java"));
 
-        ffDriver.close();
-        ffDriver.quit();
+        driver.close();
+        driver.quit();
     }
 
 }
