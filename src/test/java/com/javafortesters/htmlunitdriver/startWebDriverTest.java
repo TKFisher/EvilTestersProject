@@ -6,11 +6,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
-import static org.junit.Assert.assertEquals;
+
 import static org.junit.Assert.assertTrue;
 
-
-public class startWebDriver {
+public class startWebDriverTest {
 
     WebDriver driver ;
 
