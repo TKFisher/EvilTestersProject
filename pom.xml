@@ -48,6 +48,9 @@
                 Firefox < 48 - use MyFirstTest to run in Firefox
                 Firefox 48+ - geckodriver.exe renamed to wires.exe and on path and use MyFirstTestFF48
 
+            3.4.0
+                Firefox 54+ - updated Geckodriver to version 17 which fixed the sendkeys() text issue
+
             Version Independent
                 MyFirstChromeTest will work if ChromeDriver is on the path for either version
         -->
@@ -58,7 +61,7 @@
             <!-- <version>2.53.1</version> -->
             <!-- <version>3.0.1</version> -->
             <!-- version 3.3.1 can go back to using FirefoxDriver() with geckodriver -->
-			<version>3.3.1</version>
+			<version>3.4.0</version>
         </dependency>
 
 
