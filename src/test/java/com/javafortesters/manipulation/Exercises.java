@@ -311,7 +311,7 @@ public class Exercises {
                 ("_valuemultipleselect3")).isEmpty());
 
     }
-    
+
     @Test
     public void chooseFileAndSelectToOpen() {
 
