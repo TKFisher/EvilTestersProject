@@ -12,7 +12,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.3.2</version>
+                <version>3.6.1</version>
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
@@ -61,9 +61,14 @@
             <!-- <version>2.53.1</version> -->
             <!-- <version>3.0.1</version> -->
             <!-- version 3.3.1 can go back to using FirefoxDriver() with geckodriver -->
-			<version>3.4.0</version>
+			<version>3.6.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>htmlunit-driver</artifactId>
+            <version>2.27</version>
+        </dependency>
 
         <dependency>
             <groupId>junit</groupId>
